@@ -1,25 +1,25 @@
-CREATE TABLE IF NOT EXISTS categorias (
-    id_categoria INTEGER PRIMARY KEY AUTOINCREMENT,
-    nome_categoria TEXT NOT NULL
+CREATE TABLE IF NOT EXISTS categories (
+    id_category INTEGER PRIMARY KEY AUTOINCREMENT,
+    category_name TEXT NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS produtos (
-    id_produto INTEGER PRIMARY KEY AUTOINCREMENT,
-    nome_produto TEXT NOT NULL,
-    preco REAL NOT NULL,
-    quantidade INTEGER NOT NULL,
-    id_categoria INTEGER NOT NULL,
-    FOREIGN KEY (id_categoria) REFERENCES categorias(id_categoria)
+CREATE TABLE IF NOT EXISTS products (
+    id_product INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    price REAL NOT NULL,
+    quantity INTEGER NOT NULL,
+    category_id INTEGER NOT NULL,
+    FOREIGN KEY (category_id) REFERENCES categories(category_id)
 );
 
-INSERT INTO categorias (nome_categoria) VALUES
+INSERT INTO categories (category_name) VALUES
 ('Informática'),
 ('Periféricos'),
 ('Eletrônicos'),
 ('Acessórios'),
 ('Escritório');
 
-INSERT INTO produtos (nome_produto, preco, quantidade, id_categoria) VALUES
+INSERT INTO products (name, price, quantity, category_id) VALUES
 ('Notebook Lenovo', 3500.00, 5, 1),
 ('Mouse Gamer', 120.00, 20, 2),
 ('Teclado Mecânico', 250.00, 15, 2),
