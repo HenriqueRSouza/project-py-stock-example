@@ -182,7 +182,11 @@ na raiz do projeto:
 sqlite3 source_code/inventory.db < source_code/script.sql
 ```
 
-# Inventory Control System
+
+
+
+
+# English - Inventory Control System
 
 ## Project Information
 
