@@ -2,8 +2,8 @@
 
 ## Informacoes do projeto
 
-**Nome dos integrantes:** preencher com os nomes dos integrantes do grupo  
-**Turma:** preencher com a turma  
+**Nome dos integrantes:** Henrique Ribeiro Souza Baldim
+**Turma:** 02I11  
 **Tema escolhido:** controle de estoque de produtos  
 **Linguagem utilizada:** Python  
 **Banco de dados utilizado:** SQLite

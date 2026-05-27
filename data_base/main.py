@@ -1,7 +1,7 @@
 import sqlite3
 import os
 
-DATABASE_PATH = os.path.join("..", "source_code", "inventory.db")
+DATABASE_PATH = os.path.join(".", "source_code", "inventory.db")
 
 def connect():
     return sqlite3.connect(DATABASE_PATH)
